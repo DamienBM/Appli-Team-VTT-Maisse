@@ -20,4 +20,12 @@
   </div>
 
   <p>{{speaker?.about}}</p>
+
+  <ion-fab bottom right #fab4>
+    <button ion-fab><ion-icon name="arrow-dropup"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab color="google" (click)="open('http://www.teamvttmaisse.org/forum/portal.php')"><ion-icon name="bicycle"></ion-icon></button>
+      <button ion-fab color="facebook" (click)="open('https://www.facebook.com/teamvttmaisse/')"><ion-icon name="logo-facebook"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>

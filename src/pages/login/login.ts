@@ -1,3 +1,4 @@
+import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
@@ -19,7 +20,10 @@ export class LoginPage {
   login: UserOptions = { username: '', password: '' };
   submitted = false;
 
-  constructor(public navCtrl: NavController, public userData: UserData) { }
+  constructor(public navCtrl: NavController, 
+              public userData: UserData,
+              public InAppBrowser: InAppBrowser
+            ) { }
 
   onLogin(form: NgForm) {
     this.submitted = true;
@@ -32,5 +36,13 @@ export class LoginPage {
 
   onSignup() {
     this.navCtrl.push(SignupPage);
+  }
+
+  onclick(url: string){
+
+    const options : InAppBrowserOptions = {}
+
+    this.InAppBrowser.create(url,'_self',options);
+
   }
 }

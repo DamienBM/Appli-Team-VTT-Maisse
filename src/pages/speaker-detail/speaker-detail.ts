@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import { ConferenceData } from '../../providers/conference-data';
+import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
 
 @Component({
   selector: 'page-speaker-detail',
@@ -10,7 +11,7 @@ import { ConferenceData } from '../../providers/conference-data';
 export class SpeakerDetailPage {
   speaker: any;
 
-  constructor(public dataProvider: ConferenceData, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public dataProvider: ConferenceData, public navCtrl: NavController, public navParams: NavParams, private InAppBrowser: InAppBrowser) {
   }
 
   ionViewWillEnter() {
@@ -24,6 +25,14 @@ export class SpeakerDetailPage {
         }
       }
     });
+
+  }
+
+  open(url:string){
+
+    const options: InAppBrowserOptions = {}
+
+    this.InAppBrowser.create(url,'_self',options);
 
   }
 

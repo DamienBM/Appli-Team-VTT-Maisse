@@ -11,7 +11,6 @@ import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
-import { TutorialPage } from '../pages/tutorial/tutorial';
 import { SchedulePage } from '../pages/schedule/schedule';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { SupportPage } from '../pages/support/support';
@@ -42,20 +41,18 @@ export class ConferenceApp {
   // the left menu only works after login
   // the login page disables the left menu
   appPages: PageInterface[] = [
-    { title: 'Schedule', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
-    { title: 'Speakers', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
-    { title: 'Map', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 2, icon: 'map' },
-    { title: 'About', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' }
+    { title: 'Courses', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
+    { title: 'Licenciés', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
+    { title: 'Carte', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 2, icon: 'map' },
+    { title: 'Programmer', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' }
   ];
   loggedInPages: PageInterface[] = [
-    { title: 'Account', name: 'AccountPage', component: AccountPage, icon: 'person' },
-    { title: 'Support', name: 'SupportPage', component: SupportPage, icon: 'help' },
-    { title: 'Logout', name: 'TabsPage', component: TabsPage, icon: 'log-out', logsOut: true }
+    { title: 'Compte', name: 'AccountPage', component: AccountPage, icon: 'person' },
+    { title: 'Déconnexion', name: 'TabsPage', component: TabsPage, icon: 'log-out', logsOut: true }
   ];
   loggedOutPages: PageInterface[] = [
-    { title: 'Login', name: 'LoginPage', component: LoginPage, icon: 'log-in' },
-    { title: 'Support', name: 'SupportPage', component: SupportPage, icon: 'help' },
-    { title: 'Signup', name: 'SignupPage', component: SignupPage, icon: 'person-add' }
+    { title: 'Connexion', name: 'LoginPage', component: LoginPage, icon: 'log-in' },
+    { title: 'Inscription', name: 'SignupPage', component: SignupPage, icon: 'person-add' }
   ];
   rootPage: any = LoginPage;
 
@@ -75,7 +72,7 @@ export class ConferenceApp {
         if (hasSeenTutorial) {
           this.rootPage = TabsPage;
         } else {
-          this.rootPage = TutorialPage;
+          this.rootPage = TabsPage;
         }
         this.platformReady()
       });
@@ -118,10 +115,6 @@ export class ConferenceApp {
       // Give the menu time to close before changing to logged out
       this.userData.logout();
     }
-  }
-
-  openTutorial() {
-    this.nav.setRoot(TutorialPage);
   }
 
   listenToLoginEvents() {

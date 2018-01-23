@@ -1,7 +1,7 @@
+import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
 import { Component, ViewChild } from '@angular/core';
 
-import { AlertController, App, FabContainer, ItemSliding, List, ModalController, NavController, ToastController, LoadingController, Refresher } from 'ionic-angular';
-
+import { AlertController, App, ItemSliding, List, ModalController, NavController, ToastController, LoadingController, Refresher } from 'ionic-angular';
 /*
   To learn how to use third party libs in an
   Ionic app check out our docs here: http://ionicframework.com/docs/v2/resources/third-party-libs/
@@ -13,7 +13,6 @@ import { UserData } from '../../providers/user-data';
 
 import { SessionDetailPage } from '../session-detail/session-detail';
 import { ScheduleFilterPage } from '../schedule-filter/schedule-filter';
-
 
 @Component({
   selector: 'page-schedule',
@@ -33,6 +32,7 @@ export class SchedulePage {
   shownSessions: any = [];
   groups: any = [];
   confDate: string;
+  url : string;
 
   constructor(
     public alertCtrl: AlertController,
@@ -43,6 +43,7 @@ export class SchedulePage {
     public toastCtrl: ToastController,
     public confData: ConferenceData,
     public user: UserData,
+    private InAppBrowser: InAppBrowser
   ) {}
 
   ionViewDidLoad() {
@@ -137,16 +138,12 @@ export class SchedulePage {
     alert.present();
   }
 
-  openSocial(network: string, fab: FabContainer) {
-    let loading = this.loadingCtrl.create({
-      content: `Posting to ${network}`,
-      duration: (Math.random() * 1000) + 500
-    });
-    loading.onWillDismiss(() => {
-      fab.close();
-    });
-    loading.present();
+  open(url: string) {
+    const options: InAppBrowserOptions = {}
+  
+    this.InAppBrowser.create(url,'_self',options);
   }
+ 0 
 
   doRefresh(refresher: Refresher) {
     this.confData.getTimeline(this.dayIndex, this.queryText, this.excludeTracks, this.segment).subscribe((data: any) => {

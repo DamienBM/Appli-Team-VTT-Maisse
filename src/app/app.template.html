@@ -30,16 +30,6 @@
           {{p.title}}
         </button>
       </ion-list>
-
-      <ion-list>
-        <ion-list-header>
-          Tutorial
-        </ion-list-header>
-        <button ion-item menuClose (click)="openTutorial()">
-          <ion-icon item-start name="hammer"></ion-icon>
-          Show Tutorial
-        </button>
-      </ion-list>
     </ion-content>
 
   </ion-menu>
@@ -57,7 +47,7 @@
 
       <ion-list>
         <ion-list-header>
-          Navigate
+          Principal
         </ion-list-header>
         <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">
           <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
@@ -67,21 +57,11 @@
 
       <ion-list>
         <ion-list-header>
-          Account
+          Compte
         </ion-list-header>
         <button ion-item menuClose *ngFor="let p of loggedInPages" (click)="openPage(p)">
           <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
           {{p.title}}
-        </button>
-      </ion-list>
-
-      <ion-list>
-        <ion-list-header>
-          Tutorial
-        </ion-list-header>
-        <button ion-item menuClose (click)="openTutorial()">
-          <ion-icon item-start name="hammer"></ion-icon>
-          Show Tutorial
         </button>
       </ion-list>
 

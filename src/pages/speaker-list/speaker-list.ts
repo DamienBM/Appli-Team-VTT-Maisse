@@ -7,7 +7,7 @@ import {
   Config,
   NavController
 } from 'ionic-angular';
-import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
 
 import { ConferenceData } from '../../providers/conference-data';
 
@@ -112,5 +112,12 @@ export class SpeakerListPage {
     } as ActionSheetOptions);
 
     actionSheet.present();
+  }
+
+  open(url: string){
+
+    const options: InAppBrowserOptions = {}
+
+    this.inAppBrowser.create(url,'_self',options)
   }
 }
