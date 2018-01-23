@@ -6,9 +6,9 @@
 
 <ion-content padding class="speaker-detail">
   <div text-center *ngIf="speaker">
-    <img [src]="speaker.profilePic" [alt]="speaker.name"><br>
+    <img [src]="speaker.profilePic" [alt]="speaker.name" width="240" height="360"><br> <!--width=638xheight=960-->
 
-    <button ion-button icon-only clear small color="twitter">
+    <!--<button ion-button icon-only clear small color="twitter">
       <ion-icon name="logo-twitter"></ion-icon>
     </button>
     <button ion-button icon-only clear small color="github">
@@ -16,7 +16,7 @@
     </button>
     <button ion-button icon-only clear small color="instagram">
       <ion-icon name="logo-instagram"></ion-icon>
-    </button>
+    </button>-->
   </div>
 
   <p>{{speaker?.about}}</p>

@@ -204,115 +204,36 @@
         "id": "20"
       }]
     }]
-    
   }],
 
 
-  "licencies": [{
+  "speakers": [
+  {
     "name": "Christophe Billot-Mornet",
-    "profilePic": "assets/img/licencieschristophe_bm.jpg",
-    "about": "Rider hors pair !",
-    "location": "Milly La Foret",
+    "profilePic": "assets/img/licencies/christophe_bm.jpg",
+    "twitter": "",
+    "about": "Un rider hors pair !",
+    "location": "Buno-Bonneveaux",
     "email": "christophe.billot@ram-electronique.fr",
     "phone": "+33 6 83 89 13 02",
     "id": "1"
-  }, {
-    "name": "Charlie Cheetah",
-    "profilePic": "assets/img/licencies/cheetah.jpg",
-    "about": "Charlie is a Cheetah.",
-    "location": "Everywhere",
-    "email": "charlie@example.com",
-    "phone": "+1-541-754-3010",
+  },
+  {
+    "name": "Christophe Billot-Mornet",
+    "profilePic": "assets/img/licencies/johanne_bm.jpg",
+    "twitter": "",
+    "about": "C'est la Trésorière !",
+    "location": "Buno-Bonneveaux",
+    "email": "johanne.billot-mornet@sfr.fr",
+    "phone": "+33 6 10 33 68 50",
     "id": "2"
-  }, {
-    "name": "Donald Duck",
-    "profilePic": "assets/img/licencies/duck.jpg",
-    "about": "Donald is a Duck.",
-    "location": "Everywhere",
-    "email": "donald@example.com",
-    "phone": "+1-541-754-3010",
-    "id": "3"
-  }, {
-    "name": "Eva Eagle",
-    "profilePic": "assets/img/licencies/eagle.jpg",
-    "about": "Eva is an Eagle.",
-    "location": "Everywhere",
-    "email": "eva@example.com",
-    "phone": "+1-541-754-3010",
-    "id": "4"
-  }, {
-    "name": "Ellie Elephant",
-    "profilePic": "assets/img/licencies/elephant.jpg",
-    "about": "Ellie is an Elephant.",
-    "location": "Everywhere",
-    "email": "ellie@example.com",
-    "phone": "+1-541-754-3010",
-    "id": "5"
-  }, {
-    "name": "Gino Giraffe",
-    "profilePic": "assets/img/licencies/giraffe.jpg",
-    "about": "Gino is a Giraffe.",
-    "location": "Everywhere",
-    "email": "gino@example.com",
-    "phone": "+1-541-754-3010",
-    "id": "6"
-  }, {
-    "name": "Isabella Iguana",
-    "profilePic": "assets/img/licencies/iguana.jpg",
-    "about": "Isabella is an Iguana.",
-    "location": "Everywhere",
-    "email": "isabella@example.com",
-    "phone": "+1-541-754-3010",
-    "id": "7"
-  }, {
-    "name": "Karl Kitten",
-    "profilePic": "assets/img/licencies/kitten.jpg",
-    "about": "Karl is a Kitten.",
-    "location": "Everywhere",
-    "email": "karl@example.com",
-    "phone": "+1-541-754-3010",
-    "id": "8"
-  }, {
-    "name": "Lionel Lion",
-    "profilePic": "assets/img/licencies/lion.jpg",
-    "about": "Lionel is a Lion.",
-    "location": "Everywhere",
-    "email": "lionel@example.com",
-    "phone": "+1-541-754-3010",
-    "id": "9"
-  }, {
-    "name": "Molly Mouse",
-    "profilePic": "assets/img/licencies/mouse.jpg",
-    "about": "Molly is a Mouse.",
-    "location": "Everywhere",
-    "email": "molly@example.com",
-    "phone": "+1-541-754-3010",
-    "id": "10"
-  }, {
-    "name": "Paul Puppy",
-    "profilePic": "assets/img/licencies/puppy.jpg",
-    "about": "Paul is a Puppy.",
-    "location": "Everywhere",
-    "email": "paul@example.com",
-    "phone": "+1-541-754-3010",
-    "id": "11"
-  }, {
-    "name": "Rachel Rabbit",
-    "profilePic": "assets/img/licencies/rabbit.jpg",
-    "about": "Rachel is a Rabbit.",
-    "location": "Everywhere",
-    "email": "rachel@example.com",
-    "phone": "+1-541-754-3010",
-    "id": "12"
-  }, {
-    "name": "Ted Turtle",
-    "profilePic": "assets/img/licencies/turtle.jpg",
-    "about": "Ted is a Turtle.",
-    "location": "Everywhere",
-    "email": "ted@example.com",
-    "phone": "+1-541-754-3010",
-    "id": "13"
-  }],
+  }
+
+
+
+
+],
+
 
   "map": [{
     "name": "Monona Terrace Convention Center",
