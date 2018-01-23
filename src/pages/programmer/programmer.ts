@@ -4,10 +4,10 @@ import { PopoverController } from 'ionic-angular';
 import { PopoverPage } from '../about-popover/about-popover';
 
 @Component({
-  selector: 'page-about',
-  templateUrl: 'about.html'
+  selector: 'page-program',
+  templateUrl: 'programmer.html'
 })
-export class AboutPage {
+export class ProgramPage {
   conferenceDate = '2047-05-17';
 
   constructor(public popoverCtrl: PopoverController) { }
