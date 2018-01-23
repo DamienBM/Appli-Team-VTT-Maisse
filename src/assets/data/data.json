@@ -204,22 +204,21 @@
         "id": "20"
       }]
     }]
+    
   }],
 
 
-  "speakers": [{
-    "name": "Burt Bear",
-    "profilePic": "assets/img/speakers/bear.jpg",
-    "twitter": "ionicframework",
-    "about": "Burt is a Bear.",
-    "location": "Everywhere",
-    "email": "burt@example.com",
-    "phone": "+1-541-754-3010",
+  "licencies": [{
+    "name": "Christophe Billot-Mornet",
+    "profilePic": "assets/img/licencieschristophe_bm.jpg",
+    "about": "Rider hors pair !",
+    "location": "Milly La Foret",
+    "email": "christophe.billot@ram-electronique.fr",
+    "phone": "+33 6 83 89 13 02",
     "id": "1"
   }, {
     "name": "Charlie Cheetah",
-    "profilePic": "assets/img/speakers/cheetah.jpg",
-    "twitter": "ionicframework",
+    "profilePic": "assets/img/licencies/cheetah.jpg",
     "about": "Charlie is a Cheetah.",
     "location": "Everywhere",
     "email": "charlie@example.com",
@@ -227,8 +226,7 @@
     "id": "2"
   }, {
     "name": "Donald Duck",
-    "profilePic": "assets/img/speakers/duck.jpg",
-    "twitter": "ionicframework",
+    "profilePic": "assets/img/licencies/duck.jpg",
     "about": "Donald is a Duck.",
     "location": "Everywhere",
     "email": "donald@example.com",
@@ -236,8 +234,7 @@
     "id": "3"
   }, {
     "name": "Eva Eagle",
-    "profilePic": "assets/img/speakers/eagle.jpg",
-    "twitter": "ionicframework",
+    "profilePic": "assets/img/licencies/eagle.jpg",
     "about": "Eva is an Eagle.",
     "location": "Everywhere",
     "email": "eva@example.com",
@@ -245,8 +242,7 @@
     "id": "4"
   }, {
     "name": "Ellie Elephant",
-    "profilePic": "assets/img/speakers/elephant.jpg",
-    "twitter": "ionicframework",
+    "profilePic": "assets/img/licencies/elephant.jpg",
     "about": "Ellie is an Elephant.",
     "location": "Everywhere",
     "email": "ellie@example.com",
@@ -254,8 +250,7 @@
     "id": "5"
   }, {
     "name": "Gino Giraffe",
-    "profilePic": "assets/img/speakers/giraffe.jpg",
-    "twitter": "ionicframework",
+    "profilePic": "assets/img/licencies/giraffe.jpg",
     "about": "Gino is a Giraffe.",
     "location": "Everywhere",
     "email": "gino@example.com",
@@ -263,8 +258,7 @@
     "id": "6"
   }, {
     "name": "Isabella Iguana",
-    "profilePic": "assets/img/speakers/iguana.jpg",
-    "twitter": "ionicframework",
+    "profilePic": "assets/img/licencies/iguana.jpg",
     "about": "Isabella is an Iguana.",
     "location": "Everywhere",
     "email": "isabella@example.com",
@@ -272,8 +266,7 @@
     "id": "7"
   }, {
     "name": "Karl Kitten",
-    "profilePic": "assets/img/speakers/kitten.jpg",
-    "twitter": "ionicframework",
+    "profilePic": "assets/img/licencies/kitten.jpg",
     "about": "Karl is a Kitten.",
     "location": "Everywhere",
     "email": "karl@example.com",
@@ -281,8 +274,7 @@
     "id": "8"
   }, {
     "name": "Lionel Lion",
-    "profilePic": "assets/img/speakers/lion.jpg",
-    "twitter": "ionicframework",
+    "profilePic": "assets/img/licencies/lion.jpg",
     "about": "Lionel is a Lion.",
     "location": "Everywhere",
     "email": "lionel@example.com",
@@ -290,8 +282,7 @@
     "id": "9"
   }, {
     "name": "Molly Mouse",
-    "profilePic": "assets/img/speakers/mouse.jpg",
-    "twitter": "ionicframework",
+    "profilePic": "assets/img/licencies/mouse.jpg",
     "about": "Molly is a Mouse.",
     "location": "Everywhere",
     "email": "molly@example.com",
@@ -299,8 +290,7 @@
     "id": "10"
   }, {
     "name": "Paul Puppy",
-    "profilePic": "assets/img/speakers/puppy.jpg",
-    "twitter": "ionicframework",
+    "profilePic": "assets/img/licencies/puppy.jpg",
     "about": "Paul is a Puppy.",
     "location": "Everywhere",
     "email": "paul@example.com",
@@ -308,8 +298,7 @@
     "id": "11"
   }, {
     "name": "Rachel Rabbit",
-    "profilePic": "assets/img/speakers/rabbit.jpg",
-    "twitter": "ionicframework",
+    "profilePic": "assets/img/licencies/rabbit.jpg",
     "about": "Rachel is a Rabbit.",
     "location": "Everywhere",
     "email": "rachel@example.com",
@@ -317,15 +306,13 @@
     "id": "12"
   }, {
     "name": "Ted Turtle",
-    "profilePic": "assets/img/speakers/turtle.jpg",
-    "twitter": "ionicframework",
+    "profilePic": "assets/img/licencies/turtle.jpg",
     "about": "Ted is a Turtle.",
     "location": "Everywhere",
     "email": "ted@example.com",
     "phone": "+1-541-754-3010",
     "id": "13"
   }],
-
 
   "map": [{
     "name": "Monona Terrace Convention Center",
