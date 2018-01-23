@@ -11,7 +11,7 @@ import { IonicStorageModule } from '@ionic/storage';
 
 import { ConferenceApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
+import { ProgramPage } from '../pages/programmer/programmer';
 import { PopoverPage } from '../pages/about-popover/about-popover';
 import { AccountPage } from '../pages/account/account';
 import { LoginPage } from '../pages/login/login';
@@ -32,7 +32,7 @@ import { UserData } from '../providers/user-data';
 @NgModule({
   declarations: [
     ConferenceApp,
-    AboutPage,
+    ProgramPage,
     AccountPage,
     LoginPage,
     MapPage,
@@ -58,7 +58,7 @@ import { UserData } from '../providers/user-data';
         { component: SpeakerListPage, name: 'SpeakerList', segment: 'speakerList' },
         { component: SpeakerDetailPage, name: 'SpeakerDetail', segment: 'speakerDetail/:speakerId' },
         { component: MapPage, name: 'Map', segment: 'map' },
-        { component: AboutPage, name: 'About', segment: 'about' },
+        { component: ProgramPage, name: 'About', segment: 'about' },
         { component: SupportPage, name: 'SupportPage', segment: 'support' },
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
@@ -70,7 +70,7 @@ import { UserData } from '../providers/user-data';
   bootstrap: [IonicApp],
   entryComponents: [
     ConferenceApp,
-    AboutPage,
+    ProgramPage,
     AccountPage,
     LoginPage,
     MapPage,
