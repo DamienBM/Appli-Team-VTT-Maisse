@@ -1,7 +1,7 @@
 import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
 import { Component, ViewChild } from '@angular/core';
 
-import { AlertController, App, ItemSliding, List, ModalController, NavController, ToastController, LoadingController, Refresher } from 'ionic-angular';
+import { AlertController, App, List, ModalController, NavController, ToastController, LoadingController, Refresher } from 'ionic-angular';
 /*
   To learn how to use third party libs in an
   Ionic app check out our docs here: http://ionicframework.com/docs/v2/resources/third-party-libs/
