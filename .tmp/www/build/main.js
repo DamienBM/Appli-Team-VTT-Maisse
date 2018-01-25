@@ -31,7 +31,7 @@ var ProgramPage = (function () {
     };
     ProgramPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-program',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/programmer/programmer.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>About</ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="presentPopover($event)">\n        <ion-icon name="more"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div class="program-header">\n    <img src="assets/img/ionic-logo-white.svg" alt="ionic logo">\n  </div>\n  <div padding class="program-info">\n    <h4>Ionic Conference</h4>\n\n    <ion-list no-lines>\n      <ion-item>\n        <ion-icon name="calendar" item-start></ion-icon>\n        <ion-label>Date</ion-label>\n        <ion-datetime displayFormat="MMM DD, YYYY" max="2056" [(ngModel)]="conferenceDate"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-icon name="pin" item-start></ion-icon>\n        <ion-label>Location</ion-label>\n        <ion-select>\n          <ion-option value="madison" selected>Madison, WI</ion-option>\n          <ion-option value="austin">Austin, TX</ion-option>\n          <ion-option value="chicago">Chicago, IL</ion-option>\n          <ion-option value="seattle">Seattle, WA</ion-option>\n        </ion-select>\n      </ion-item>\n    </ion-list>\n\n    <p>\n      The Ionic Conference is a one-day conference featuring talks from the\n      Ionic team. It is focused on Ionic applications being built with\n      Ionic 2. This includes migrating apps from Ionic 1 to Ionic 2,\n      Angular concepts, Webpack, Sass, and many other technologies used\n      in Ionic 2. Tickets are completely sold out, and we’re expecting\n      more than 1000 developers – making this the largest Ionic\n      conference ever!\n    </p>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/programmer/programmer.html"*/
+            selector: 'page-program',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/programmer/programmer.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Course</ion-title>\n    <!--<ion-buttons end>\n      <button ion-button icon-only (click)="presentPopover($event)">\n        <ion-icon name="more"></ion-icon>\n      </button>\n    </ion-buttons>-->\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div class="program-header">\n    <img src="assets/img/nouvelle_course.jpg" alt="photo départ">\n  </div>\n  <div padding class="program-info">\n    <h4>Ajouter une nouvelle course</h4>\n\n    <ion-list no-lines>\n      <ion-item>\n        <ion-icon name="calendar" item-start></ion-icon>\n        <ion-label>Date</ion-label>\n        <ion-datetime displayFormat="MMM DD, YYYY" max="2056" [(ngModel)]="conferenceDate"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-icon name="pin" item-start></ion-icon>\n        <ion-label>Lieu</ion-label>\n        <ion-select>\n          <ion-option value="Buno" selected>Buno-Bonneveaux</ion-option>\n          <ion-option value="Maisse">Maisse</ion-option>\n        </ion-select>\n      </ion-item>\n    </ion-list>\n\n    <p> \n      <B> \n        <FONT size = 3>\n          Choisissez une date et un endroit pour indiquer la nouvelle course que vous allez faire avec les aux autres membres !\n        </FONT>\n      </B>\n    </p>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/programmer/programmer.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* PopoverController */]])
     ], ProgramPage);
@@ -99,7 +99,7 @@ var MapPage = (function () {
     ], MapPage.prototype, "mapElement", void 0);
     MapPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-map',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/map/map.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Map</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="map-page">\n  <div style="height: 100%; width: 100%" #mapCanvas id="map_canvas"></div>\n</ion-content>\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/map/map.html"*/
+            selector: 'page-map',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/map/map.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Carte</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="map-page">\n  <div style="height: 100%; width: 100%" #mapCanvas id="map_canvas"></div>\n</ion-content>\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/map/map.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_conference_data__["a" /* ConferenceData */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["p" /* Platform */]])
     ], MapPage);
@@ -115,7 +115,7 @@ var MapPage = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SchedulePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_in_app_browser__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_in_app_browser__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_conference_data__ = __webpack_require__(25);
@@ -162,7 +162,7 @@ var SchedulePage = (function () {
         this.groups = [];
     }
     SchedulePage.prototype.ionViewDidLoad = function () {
-        this.app.setTitle('Schedule');
+        this.app.setTitle('Courses');
         this.updateSchedule();
     };
     SchedulePage.prototype.updateSchedule = function () {
@@ -190,59 +190,61 @@ var SchedulePage = (function () {
         // and pass in the session data
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__session_detail_session_detail__["a" /* SessionDetailPage */], { sessionId: sessionData.id, name: sessionData.name });
     };
-    SchedulePage.prototype.addFavorite = function (slidingItem, sessionData) {
-        if (this.user.hasFavorite(sessionData.name)) {
-            // woops, they already favorited it! What shall we do!?
-            // prompt them to remove it
-            this.removeFavorite(slidingItem, sessionData, 'Favorite already added');
-        }
-        else {
-            // remember this session as a user favorite
-            this.user.addFavorite(sessionData.name);
-            // create an alert instance
-            var alert_1 = this.alertCtrl.create({
-                title: 'Favorite Added',
-                buttons: [{
-                        text: 'OK',
-                        handler: function () {
-                            // close the sliding item
-                            slidingItem.close();
-                        }
-                    }]
-            });
-            // now present the alert on top of all other content
-            alert_1.present();
-        }
-    };
-    SchedulePage.prototype.removeFavorite = function (slidingItem, sessionData, title) {
-        var _this = this;
-        var alert = this.alertCtrl.create({
-            title: title,
-            message: 'Would you like to remove this session from your favorites?',
-            buttons: [
-                {
-                    text: 'Cancel',
-                    handler: function () {
-                        // they clicked the cancel button, do not remove the session
-                        // close the sliding item and hide the option buttons
-                        slidingItem.close();
-                    }
-                },
-                {
-                    text: 'Remove',
-                    handler: function () {
-                        // they want to remove this session from their favorites
-                        _this.user.removeFavorite(sessionData.name);
-                        _this.updateSchedule();
-                        // close the sliding item and hide the option buttons
-                        slidingItem.close();
-                    }
-                }
-            ]
+    /*addFavorite(slidingItem: ItemSliding, sessionData: any) {
+  
+      if (this.user.hasFavorite(sessionData.name)) {
+        // woops, they already favorited it! What shall we do!?
+        // prompt them to remove it
+        this.removeFavorite(slidingItem, sessionData, 'Favorite already added');
+      } else {
+        // remember this session as a user favorite
+        this.user.addFavorite(sessionData.name);
+  
+        // create an alert instance
+        let alert = this.alertCtrl.create({
+          title: 'Favorite Added',
+          buttons: [{
+            text: 'OK',
+            handler: () => {
+              // close the sliding item
+              slidingItem.close();
+            }
+          }]
         });
         // now present the alert on top of all other content
         alert.present();
-    };
+      }
+  
+    }*/
+    /*removeFavorite(slidingItem: ItemSliding, sessionData: any, title: string) {
+      let alert = this.alertCtrl.create({
+        title: title,
+        message: 'Would you like to remove this session from your favorites?',
+        buttons: [
+          {
+            text: 'Cancel',
+            handler: () => {
+              // they clicked the cancel button, do not remove the session
+              // close the sliding item and hide the option buttons
+              slidingItem.close();
+            }
+          },
+          {
+            text: 'Remove',
+            handler: () => {
+              // they want to remove this session from their favorites
+              this.user.removeFavorite(sessionData.name);
+              this.updateSchedule();
+  
+              // close the sliding item and hide the option buttons
+              slidingItem.close();
+            }
+          }
+        ]
+      });
+      // now present the alert on top of all other content
+      alert.present();
+    }*/
     SchedulePage.prototype.open = function (url) {
         var options = {};
         this.InAppBrowser.create(url, '_self', options);
@@ -257,7 +259,7 @@ var SchedulePage = (function () {
             setTimeout(function () {
                 refresher.complete();
                 var toast = _this.toastCtrl.create({
-                    message: 'Sessions have been updated.',
+                    message: 'Liste des courses programmées mise à jour !',
                     duration: 3000
                 });
                 toast.present();
@@ -270,7 +272,7 @@ var SchedulePage = (function () {
     ], SchedulePage.prototype, "scheduleList", void 0);
     SchedulePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-schedule',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/schedule/schedule.html"*/'<ion-header>\n  <ion-navbar no-border-bottom>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n\n    <ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">\n      <ion-segment-button value="all">\n        All\n      </ion-segment-button>\n      <ion-segment-button value="favorites">\n        Favorites\n      </ion-segment-button>\n    </ion-segment>\n\n    <ion-buttons end>\n      <button ion-button icon-only (click)="presentFilter()">\n        <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n  <ion-toolbar no-border-top>\n    <ion-searchbar color="primary"\n                   [(ngModel)]="queryText"\n                   (ionInput)="updateSchedule()"\n                   placeholder="Search">\n    </ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n\n  <ion-list #scheduleList [hidden]="shownSessions === 0">\n\n    <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">\n\n      <ion-item-divider sticky>\n        <ion-label>\n          {{group.time}}\n        </ion-label>\n      </ion-item-divider>\n\n      <ion-item-sliding *ngFor="let session of group.sessions" #slidingItem [attr.track]="session.tracks[0] | lowercase" [hidden]="session.hide">\n\n        <button ion-item (click)="goToSessionDetail(session)">\n          <h3>{{session.name}}</h3>\n          <p>\n            {{session.timeStart}} &mdash;\n            {{session.timeEnd}}:\n            {{session.location}}\n          </p>\n        </button>\n\n        <ion-item-options>\n          <button ion-button color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === \'all\'">\n            Favorite\n          </button>\n          <button ion-button color="danger" (click)="removeFavorite(slidingItem, session, \'Remove Favorite\')" *ngIf="segment === \'favorites\'">\n            Remove\n          </button>\n        </ion-item-options>\n\n      </ion-item-sliding>\n\n    </ion-item-group>\n\n  </ion-list>\n\n  <ion-list-header [hidden]="shownSessions > 0">\n      No Sessions Found\n  </ion-list-header>\n\n  <ion-fab bottom right #fab4>\n		<button ion-fab><ion-icon name="arrow-dropup"></ion-icon></button>\n		<ion-fab-list side="top">\n		  <button ion-fab color="google" (click)="open(\'http://www.teamvttmaisse.org/forum/portal.php\')"><ion-icon name="bicycle"></ion-icon></button>\n		  <button ion-fab color="facebook" (click)="open(\'https://www.facebook.com/teamvttmaisse/\')"><ion-icon name="logo-facebook"></ion-icon></button>\n		</ion-fab-list>\n	</ion-fab>\n\n</ion-content>'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/schedule/schedule.html"*/
+            selector: 'page-schedule',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/schedule/schedule.html"*/'<ion-header>\n  <ion-navbar no-border-bottom>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n\n    <!--<ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">\n      <ion-segment-button value="all">\n        Toutes les courses\n      </ion-segment-button>\n      <ion-segment-button value="favorites">\n        Favorites\n      </ion-segment-button>\n    </ion-segment>-->\n\n    <ion-title>Courses programmées</ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only (click)="presentFilter()">\n        <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n  <ion-toolbar no-border-top>\n    <ion-searchbar color="primary"\n                   [(ngModel)]="queryText"\n                   (ionInput)="updateSchedule()"\n                   placeholder="Rechercher">\n    </ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n\n  <ion-list #scheduleList [hidden]="shownSessions === 0">\n\n    <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">\n\n      <ion-item-divider sticky>\n        <ion-label>\n          {{group.time}}\n        </ion-label>\n      </ion-item-divider>\n\n      <ion-item-sliding *ngFor="let session of group.sessions" #slidingItem [attr.track]="session.tracks[0] | lowercase" [hidden]="session.hide">\n\n        <button ion-item (click)="goToSessionDetail(session)">\n          <h3>{{session.name}}</h3>\n          <p>\n            {{session.timeStart}} &mdash;\n            {{session.timeEnd}}:\n            {{session.location}}\n          </p>\n        </button>\n\n        <!--<ion-item-options>\n          <button ion-button color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === \'all\'">\n            Favorite\n          </button>\n          <button ion-button color="danger" (click)="removeFavorite(slidingItem, session, \'Remove Favorite\')" *ngIf="segment === \'favorites\'">\n            Remove\n          </button>\n        </ion-item-options>-->\n\n      </ion-item-sliding>\n\n    </ion-item-group>\n\n  </ion-list>\n\n  <ion-list-header [hidden]="shownSessions > 0">\n      Aucune course trouvée\n  </ion-list-header>\n\n  <ion-fab bottom right #fab4>\n		<button ion-fab><ion-icon name="arrow-dropup"></ion-icon></button>\n		<ion-fab-list side="top">\n		  <button ion-fab color="google" (click)="open(\'http://www.teamvttmaisse.org/forum/portal.php\')"><ion-icon name="bicycle"></ion-icon></button>\n		  <button ion-fab color="facebook" (click)="open(\'https://www.facebook.com/teamvttmaisse/\')"><ion-icon name="logo-facebook"></ion-icon></button>\n		</ion-fab-list>\n	</ion-fab>\n\n</ion-content>'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/schedule/schedule.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* AlertController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* App */],
@@ -357,7 +359,7 @@ var SessionDetailPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SpeakerListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_conference_data__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__session_detail_session_detail__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__speaker_detail_speaker_detail__ = __webpack_require__(211);
@@ -454,7 +456,7 @@ var SpeakerListPage = (function () {
     };
     SpeakerListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-speaker-list',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/speaker-list/speaker-list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Speakers</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="outer-content speaker-list">\n  <ion-list [virtualScroll]="speakers">\n    <ion-grid fixed>\n      <ion-row align-items-stretch>\n\n        <ion-col col-12 col-md-6 align-self-stretch align-self-center *virtualItem="let speaker" approxItemHeight="457px">\n\n          <ion-card class="speaker-card">\n            <ion-card-header>\n              <button ion-item detail-none (click)="goToSpeakerDetail(speaker)">\n                <ion-avatar item-start>\n                  <img [src]="speaker.profilePic" alt="Speaker profile pic">\n                </ion-avatar>\n                {{speaker.name}}\n              </button>\n            </ion-card-header>\n\n            <ion-card-content class="outer-content">\n              <ion-list>\n                <button ion-item *ngFor="let session of speaker.sessions" (click)="goToSessionDetail(session)">\n                  <h3>{{session.name}}</h3>\n                </button>\n\n                <button ion-item (click)="goToSpeakerDetail(speaker)">\n                  <h3>About {{speaker.name}}</h3>\n                </button>\n              </ion-list>\n            </ion-card-content>\n\n            <ion-row no-padding>\n              <ion-col col-12 col-lg-auto text-center text-lg-left>\n                <button ion-button clear small color="primary" icon-start (click)="goToSpeakerTwitter(speaker)">\n                  <ion-icon name="logo-twitter"></ion-icon>\n                  Tweet\n                </button>\n              </ion-col>\n              <ion-col col-12 col-lg-auto text-center>\n                <button ion-button clear small color="primary" icon-start (click)="openSpeakerShare(speaker)">\n                  <ion-icon name=\'share-alt\'></ion-icon>\n                  Share\n                </button>\n              </ion-col>\n              <ion-col col-12 col-lg-auto text-center text-lg-right>\n                <button ion-button clear small color="primary" icon-start (click)="openContact(speaker)">\n                  <ion-icon name=\'chatboxes\'></ion-icon>\n                  Contact\n                </button>\n              </ion-col>\n            </ion-row>\n\n          </ion-card>\n\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-list>\n\n  <ion-fab bottom right #fab4>\n    <button ion-fab><ion-icon name="arrow-dropup"></ion-icon></button>\n    <ion-fab-list side="top">\n      <button ion-fab color="google" (click)="open(\'http://www.teamvttmaisse.org/forum/portal.php\')"><ion-icon name="bicycle"></ion-icon></button>\n      <button ion-fab color="facebook" (click)="open(\'https://www.facebook.com/teamvttmaisse/\')"><ion-icon name="logo-facebook"></ion-icon></button>\n    </ion-fab-list>\n  </ion-fab>\n\n</ion-content>\n\n\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/speaker-list/speaker-list.html"*/
+            selector: 'page-speaker-list',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/speaker-list/speaker-list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Licenciés</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="outer-content speaker-list">\n  <ion-list [virtualScroll]="speakers">\n    <ion-grid fixed>\n      <ion-row align-items-stretch>\n\n        <ion-col col-12 col-md-6 align-self-stretch align-self-center *virtualItem="let speaker" approxItemHeight="457px">\n\n          <ion-card class="speaker-card">\n            <ion-card-header>\n              <button ion-item detail-none (click)="goToSpeakerDetail(speaker)">\n                <ion-avatar item-start>\n                  <img [src]="speaker.profilePic" alt="Speaker profile pic"/>\n                </ion-avatar>\n                {{speaker.name}}\n              </button>\n            </ion-card-header>\n\n            <ion-card-content class="outer-content">\n              <ion-list>\n                <button ion-item *ngFor="let session of speaker.sessions" (click)="goToSessionDetail(session)">\n                  <h3>{{session.name}}</h3>\n                </button>\n\n               <!-- <button ion-item (click)="goToSpeakerDetail(speaker)">\n                  <h3>About {{speaker.name}}</h3>\n                </button>-->\n              </ion-list>\n            </ion-card-content>\n\n            <ion-row no-padding>\n              <!--<ion-col col-12 col-lg-auto text-center text-lg-left>\n                <button ion-button clear small color="primary" icon-start (click)="goToSpeakerTwitter(speaker)">\n                  <ion-icon name="logo-twitter"></ion-icon>\n                  Tweet\n                </button>\n              </ion-col>\n              <ion-col col-12 col-lg-auto text-center>\n                <button ion-button clear small color="primary" icon-start (click)="openSpeakerShare(speaker)">\n                  <ion-icon name=\'share-alt\'></ion-icon>\n                  Share\n                </button>\n              </ion-col>-->\n              <ion-col col-12 col-lg-auto text-center text-lg-right>\n                <button ion-button clear big color="primary" icon-start (click)="openContact(speaker)">\n                  <ion-icon name=\'chatboxes\'></ion-icon>\n                  Contacter\n                </button>\n              </ion-col>\n            </ion-row>\n\n          </ion-card>\n\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-list>\n\n  <ion-fab bottom right #fab4>\n    <button ion-fab><ion-icon name="arrow-dropup"></ion-icon></button>\n    <ion-fab-list side="top">\n      <button ion-fab color="google" (click)="open(\'http://www.teamvttmaisse.org/forum/portal.php\')"><ion-icon name="bicycle"></ion-icon></button>\n      <button ion-fab color="facebook" (click)="open(\'https://www.facebook.com/teamvttmaisse/\')"><ion-icon name="logo-facebook"></ion-icon></button>\n    </ion-fab-list>\n  </ion-fab>\n\n</ion-content>\n\n\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/speaker-list/speaker-list.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavController */],
@@ -478,6 +480,7 @@ var SpeakerListPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_data__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs_page_tabs_page__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__ = __webpack_require__(34);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -491,10 +494,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var SignupPage = (function () {
-    function SignupPage(navCtrl, userData) {
+    function SignupPage(navCtrl, userData, InAppBrowser) {
         this.navCtrl = navCtrl;
         this.userData = userData;
+        this.InAppBrowser = InAppBrowser;
         this.signup = { username: '', password: '' };
         this.submitted = false;
     }
@@ -505,11 +510,15 @@ var SignupPage = (function () {
             this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__tabs_page_tabs_page__["a" /* TabsPage */]);
         }
     };
+    SignupPage.prototype.open = function (url) {
+        var options = {};
+        this.InAppBrowser.create(url, '_self', options);
+    };
     SignupPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-user',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/signup/signup.html"*/'<ion-header>\n	<ion-navbar>\n		<button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n		<ion-title>Signup</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content class="login-page">\n\n	<div class="logo">\n		<img src="assets/img/appicon.svg" alt="Ionic Logo">\n	</div>\n\n	<form #signupForm="ngForm" novalidate>\n		<ion-list no-lines>\n			<ion-item>\n				<ion-label stacked color="primary">Username</ion-label>\n				<ion-input [(ngModel)]="signup.username" name="username" type="text" #username="ngModel" required>\n				</ion-input>\n			</ion-item>\n			<p ion-text [hidden]="username.valid || submitted == false" color="danger" padding-left>\n				Username is required\n			</p>\n\n			<ion-item>\n				<ion-label stacked color="primary">Password</ion-label>\n				<ion-input [(ngModel)]="signup.password" name="password" type="password" #password="ngModel" required>\n				</ion-input>\n			</ion-item>\n			<p ion-text [hidden]="password.valid || submitted == false" color="danger" padding-left>\n				Password is required\n			</p>\n		</ion-list>\n\n		<div padding>\n			<button ion-button (click)="onSignup(signupForm)" type="submit" block>Create</button>\n		</div>\n	</form>\n\n</ion-content>\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/signup/signup.html"*/
+            selector: 'page-user',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/signup/signup.html"*/'<ion-header>\n	<ion-navbar>\n		<button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n		<ion-title>Inscription</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content class="login-page">\n\n	<div class="logo">\n		<img src="assets/img/VTT.jpg" alt="Logo-VTT-Maisse" width="300" height="300"/>\n	</div>\n\n	<form #signupForm="ngForm" novalidate>\n		<ion-list no-lines>\n			<ion-item>\n				<ion-label stacked color="primary">Nom d\'utilisateur</ion-label>\n				<ion-input [(ngModel)]="signup.username" name="username" type="text" #username="ngModel" required>\n				</ion-input>\n			</ion-item>\n			<p ion-text [hidden]="username.valid || submitted == false" color="danger" padding-left>\n				Nom d\'utilisateur requis !\n			</p>\n\n			<ion-item>\n				<ion-label stacked color="primary">Mot de Passe </ion-label>\n				<ion-input [(ngModel)]="signup.password" name="password" type="password" #password="ngModel" required>\n				</ion-input>\n			</ion-item>\n			<p ion-text [hidden]="password.valid || submitted == false" color="danger" padding-left>\n				Mot de passe requis !\n			</p>\n		</ion-list>\n\n		<div padding>\n			<button ion-button (click)="onSignup(signupForm)" type="submit" block>Inscription</button>\n		</div>\n	</form>\n\n	<ion-fab bottom right #fab4>\n		<button ion-fab><ion-icon name="arrow-dropup"></ion-icon></button>\n		<ion-fab-list side="top">\n		  <button ion-fab color="google" (click)="open(\'http://www.teamvttmaisse.org/forum/portal.php\')"><ion-icon name="bicycle"></ion-icon></button>\n		  <button ion-fab color="facebook" (click)="open(\'https://www.facebook.com/teamvttmaisse/\')"><ion-icon name="logo-facebook"></ion-icon></button>\n		</ion-fab-list>\n	</ion-fab>\n\n</ion-content>\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/signup/signup.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_user_data__["a" /* UserData */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_user_data__["a" /* UserData */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__["a" /* InAppBrowser */]])
     ], SignupPage);
     return SignupPage;
 }());
@@ -692,7 +701,7 @@ var AccountPage = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_in_app_browser__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_in_app_browser__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_data__ = __webpack_require__(31);
@@ -731,13 +740,13 @@ var LoginPage = (function () {
     LoginPage.prototype.onSignup = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__signup_signup__["a" /* SignupPage */]);
     };
-    LoginPage.prototype.onclick = function (url) {
+    LoginPage.prototype.open = function (url) {
         var options = {};
         this.InAppBrowser.create(url, '_self', options);
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-user',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/login/login.html"*/'<ion-header>\n	<ion-navbar>\n		<button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n		<ion-title>Login</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content>\n	<div class="logo">\n		<img src="assets/img/VTT.jpg" alt="Logo-VTT-Maisse" width="300" height="300"/>\n	</div>\n \n\n	<form #loginForm="ngForm" novalidate>\n		<ion-list no-lines>\n			<ion-item>\n				<ion-label stacked color="primary">Username</ion-label>\n				<ion-input [(ngModel)]="login.username" name="username" type="text" #username="ngModel" spellcheck="false" autocapitalize="off"\n					required>\n				</ion-input>\n			</ion-item>\n			<p ion-text [hidden]="username.valid || submitted == false" color="danger" padding-left>\n				Username is required\n			</p>\n\n			<ion-item>\n				<ion-label stacked color="primary">Password</ion-label>\n				<ion-input [(ngModel)]="login.password" name="password" type="password" #password="ngModel" required>\n				</ion-input>\n			</ion-item>\n			<p ion-text [hidden]="password.valid || submitted == false" color="danger" padding-left>\n				Password is required\n			</p>\n		</ion-list>\n\n		<ion-row responsive-sm>\n			<ion-col>\n				<button ion-button (click)="onLogin(loginForm)" type="submit" block>Login</button>\n			</ion-col>\n			<ion-col>\n				<button ion-button (click)="onSignup()" color="light" block>Signup</button>\n			</ion-col>\n		</ion-row>\n	</form>\n\n	<ion-fab bottom right #fab4>\n		<button ion-fab><ion-icon name="arrow-dropup"></ion-icon></button>\n		<ion-fab-list side="top">\n		  <button ion-fab color="google" (click)="open(\'http://www.teamvttmaisse.org/forum/portal.php\')"><ion-icon name="bicycle"></ion-icon></button>\n		  <button ion-fab color="facebook" (click)="open(\'https://www.facebook.com/teamvttmaisse/\')"><ion-icon name="logo-facebook"></ion-icon></button>\n		</ion-fab-list>\n	  </ion-fab>\n\n</ion-content>\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/login/login.html"*/
+            selector: 'page-user',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/login/login.html"*/'<ion-header>\n	<ion-navbar>\n		<button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n		<ion-title>Connexion</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content>\n	<div class="logo">\n		<img src="assets/img/VTT.jpg" alt="Logo-VTT-Maisse" width="300" height="300"/>\n	</div>\n \n\n	<form #loginForm="ngForm" novalidate>\n		<ion-list no-lines>\n			<ion-item>\n				<ion-label stacked color="primary">Nom d\'utilisateur</ion-label>\n				<ion-input [(ngModel)]="login.username" name="username" type="text" #username="ngModel" spellcheck="false" autocapitalize="off"\n					required>\n				</ion-input>\n			</ion-item>\n			<p ion-text [hidden]="username.valid || submitted == false" color="danger" padding-left>\n				Nom d\'utilisateur requis !\n			</p>\n\n			<ion-item>\n				<ion-label stacked color="primary">Mot de passe</ion-label>\n				<ion-input [(ngModel)]="login.password" name="password" type="password" #password="ngModel" required>\n				</ion-input>\n			</ion-item>\n			<p ion-text [hidden]="password.valid || submitted == false" color="danger" padding-left>\n				Mot de passe requis !\n			</p>\n		</ion-list>\n\n		<ion-row responsive-sm>\n			<ion-col>\n				<button ion-button (click)="onLogin(loginForm)" type="submit" block>Connexion</button>\n			</ion-col>\n			<ion-col>\n				<button ion-button (click)="onSignup()" color="light" block>Inscription</button>\n			</ion-col>\n		</ion-row>\n	</form>\n\n	<ion-fab bottom right #fab4>\n		<button ion-fab><ion-icon name="arrow-dropup"></ion-icon></button>\n		<ion-fab-list side="top">\n		  <button ion-fab color="google" (click)="open(\'http://www.teamvttmaisse.org/forum/portal.php\')"><ion-icon name="bicycle"></ion-icon></button>\n		  <button ion-fab color="facebook" (click)="open(\'https://www.facebook.com/teamvttmaisse/\')"><ion-icon name="logo-facebook"></ion-icon></button>\n		</ion-fab-list>\n	</ion-fab>\n\n</ion-content>\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/login/login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_3__providers_user_data__["a" /* UserData */],
@@ -806,7 +815,7 @@ var ScheduleFilterPage = (function () {
     };
     ScheduleFilterPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-schedule-filter',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/schedule-filter/schedule-filter.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">Cancel</button>\n    </ion-buttons>\n\n    <ion-title>\n      Filter Sessions\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button (click)="applyFilters()" strong>Done</button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content class="outer-content">\n\n  <ion-list>\n    <ion-list-header>Tracks</ion-list-header>\n\n    <ion-item *ngFor="let track of tracks" [attr.track]="track.name | lowercase">\n      <span item-start class="dot"></span>\n      <ion-label>{{track.name}}</ion-label>\n      <ion-toggle [(ngModel)]="track.isChecked" color="secondary"></ion-toggle>\n    </ion-item>\n\n  </ion-list>\n\n  <ion-list>\n    <button ion-item (click)="resetFilters()" detail-none class="reset-filters">\n      Reset All Filters\n    </button>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/schedule-filter/schedule-filter.html"*/
+            selector: 'page-schedule-filter',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/schedule-filter/schedule-filter.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">Annuler</button>\n    </ion-buttons>\n\n    <ion-title>\n      Filtrer les courses\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button (click)="applyFilters()" strong>OK</button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content class="outer-content">\n\n  <ion-list>\n    <ion-list-header>Licenciés</ion-list-header>\n\n    <ion-item *ngFor="let track of tracks" [attr.track]="track.name | lowercase">\n      <span item-start class="dot"></span>\n      <ion-label>{{track.name}}</ion-label>\n      <ion-toggle [(ngModel)]="track.isChecked" color="secondary"></ion-toggle>\n    </ion-item>\n\n  </ion-list>\n\n  <ion-list>\n    <button ion-item (click)="resetFilters()" detail-none class="reset-filters">\n      Activer tous les filtres\n    </button>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/schedule-filter/schedule-filter.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_conference_data__["a" /* ConferenceData */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* NavParams */],
@@ -827,7 +836,7 @@ var ScheduleFilterPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_conference_data__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_in_app_browser__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_in_app_browser__ = __webpack_require__(34);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -871,7 +880,7 @@ var SpeakerDetailPage = (function () {
     };
     SpeakerDetailPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-speaker-detail',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/speaker-detail/speaker-detail.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>{{speaker?.name}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="speaker-detail">\n  <div text-center *ngIf="speaker">\n    <img [src]="speaker.profilePic" [alt]="speaker.name"><br>\n\n    <button ion-button icon-only clear small color="twitter">\n      <ion-icon name="logo-twitter"></ion-icon>\n    </button>\n    <button ion-button icon-only clear small color="github">\n      <ion-icon name="logo-github"></ion-icon>\n    </button>\n    <button ion-button icon-only clear small color="instagram">\n      <ion-icon name="logo-instagram"></ion-icon>\n    </button>\n  </div>\n\n  <p>{{speaker?.about}}</p>\n\n  <ion-fab bottom right #fab4>\n    <button ion-fab><ion-icon name="arrow-dropup"></ion-icon></button>\n    <ion-fab-list side="top">\n      <button ion-fab color="google" (click)="open(\'http://www.teamvttmaisse.org/forum/portal.php\')"><ion-icon name="bicycle"></ion-icon></button>\n      <button ion-fab color="facebook" (click)="open(\'https://www.facebook.com/teamvttmaisse/\')"><ion-icon name="logo-facebook"></ion-icon></button>\n    </ion-fab-list>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/speaker-detail/speaker-detail.html"*/
+            selector: 'page-speaker-detail',template:/*ion-inline-start:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/speaker-detail/speaker-detail.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>{{speaker?.name}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="speaker-detail">\n  <div text-center *ngIf="speaker">\n    <img [src]="speaker.profilePic" [alt]="speaker.name" width="240" height="360"><br> <!--width=638xheight=960-->\n\n    <!--<button ion-button icon-only clear small color="twitter">\n      <ion-icon name="logo-twitter"></ion-icon>\n    </button>\n    <button ion-button icon-only clear small color="github">\n      <ion-icon name="logo-github"></ion-icon>\n    </button>\n    <button ion-button icon-only clear small color="instagram">\n      <ion-icon name="logo-instagram"></ion-icon>\n    </button>-->\n  </div>\n\n  <p>{{speaker?.about}}</p>\n\n  <ion-fab bottom right #fab4>\n    <button ion-fab><ion-icon name="arrow-dropup"></ion-icon></button>\n    <ion-fab-list side="top">\n      <button ion-fab color="google" (click)="open(\'http://www.teamvttmaisse.org/forum/portal.php\')"><ion-icon name="bicycle"></ion-icon></button>\n      <button ion-fab color="facebook" (click)="open(\'https://www.facebook.com/teamvttmaisse/\')"><ion-icon name="logo-facebook"></ion-icon></button>\n    </ion-fab-list>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/home/damien/source/ionic/Team-VTT-Maisse/src/pages/speaker-detail/speaker-detail.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_conference_data__["a" /* ConferenceData */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_in_app_browser__["a" /* InAppBrowser */]])
     ], SpeakerDetailPage);
@@ -905,7 +914,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(288);
