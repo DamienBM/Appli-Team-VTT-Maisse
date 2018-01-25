@@ -43,7 +43,7 @@ export class ConferenceApp {
   appPages: PageInterface[] = [
     { title: 'Courses', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
     { title: 'Licenciés', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
-    { title: 'Carte', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 2, icon: 'map' },
+    { title: 'Local', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 2, icon: 'map' },
     { title: 'Programmer', name: 'TabsPage', component: TabsPage, tabComponent: ProgramPage, index: 3, icon: 'information-circle' }
   ];
   loggedInPages: PageInterface[] = [
