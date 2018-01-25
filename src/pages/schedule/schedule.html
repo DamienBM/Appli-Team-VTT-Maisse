@@ -4,14 +4,16 @@
       <ion-icon name="menu"></ion-icon>
     </button>
 
-    <ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
+    <!--<ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
       <ion-segment-button value="all">
-        All
+        Toutes les courses
       </ion-segment-button>
       <ion-segment-button value="favorites">
         Favorites
       </ion-segment-button>
-    </ion-segment>
+    </ion-segment>-->
+
+    <ion-title>Courses programmées</ion-title>
 
     <ion-buttons end>
       <button ion-button icon-only (click)="presentFilter()">
@@ -24,7 +26,7 @@
     <ion-searchbar color="primary"
                    [(ngModel)]="queryText"
                    (ionInput)="updateSchedule()"
-                   placeholder="Search">
+                   placeholder="Rechercher">
     </ion-searchbar>
   </ion-toolbar>
 </ion-header>
@@ -55,14 +57,14 @@
           </p>
         </button>
 
-        <ion-item-options>
+        <!--<ion-item-options>
           <button ion-button color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === 'all'">
             Favorite
           </button>
           <button ion-button color="danger" (click)="removeFavorite(slidingItem, session, 'Remove Favorite')" *ngIf="segment === 'favorites'">
             Remove
           </button>
-        </ion-item-options>
+        </ion-item-options>-->
 
       </ion-item-sliding>
 
@@ -71,7 +73,7 @@
   </ion-list>
 
   <ion-list-header [hidden]="shownSessions > 0">
-      No Sessions Found
+      Aucune course trouvée
   </ion-list-header>
 
   <ion-fab bottom right #fab4>

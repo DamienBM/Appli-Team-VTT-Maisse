@@ -38,7 +38,7 @@ export class LoginPage {
     this.navCtrl.push(SignupPage);
   }
 
-  onclick(url: string){
+  open(url: string){
 
     const options : InAppBrowserOptions = {}
 

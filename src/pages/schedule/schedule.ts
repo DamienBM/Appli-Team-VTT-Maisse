@@ -47,7 +47,7 @@ export class SchedulePage {
   ) {}
 
   ionViewDidLoad() {
-    this.app.setTitle('Schedule');
+    this.app.setTitle('Courses');
     this.updateSchedule();
   }
 
@@ -81,7 +81,7 @@ export class SchedulePage {
     this.navCtrl.push(SessionDetailPage, { sessionId: sessionData.id, name: sessionData.name });
   }
 
-  addFavorite(slidingItem: ItemSliding, sessionData: any) {
+  /*addFavorite(slidingItem: ItemSliding, sessionData: any) {
 
     if (this.user.hasFavorite(sessionData.name)) {
       // woops, they already favorited it! What shall we do!?
@@ -106,9 +106,9 @@ export class SchedulePage {
       alert.present();
     }
 
-  }
+  }*/
 
-  removeFavorite(slidingItem: ItemSliding, sessionData: any, title: string) {
+  /*removeFavorite(slidingItem: ItemSliding, sessionData: any, title: string) {
     let alert = this.alertCtrl.create({
       title: title,
       message: 'Would you like to remove this session from your favorites?',
@@ -136,14 +136,14 @@ export class SchedulePage {
     });
     // now present the alert on top of all other content
     alert.present();
-  }
+  }*/
 
   open(url: string) {
     const options: InAppBrowserOptions = {}
   
     this.InAppBrowser.create(url,'_self',options);
   }
- 0 
+ 
 
   doRefresh(refresher: Refresher) {
     this.confData.getTimeline(this.dayIndex, this.queryText, this.excludeTracks, this.segment).subscribe((data: any) => {
@@ -156,7 +156,7 @@ export class SchedulePage {
         refresher.complete();
 
         const toast = this.toastCtrl.create({
-          message: 'Sessions have been updated.',
+          message: 'Liste des courses programmées mise à jour !',
           duration: 3000
         });
         toast.present();
