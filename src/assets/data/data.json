@@ -2,7 +2,6 @@
 
   "schedule": 
   [{
-    
     "groups": 
     [{
       "date": "02-07-2017",
@@ -19,7 +18,7 @@
     },
     {
       "date": "14-11-2017",
-      "time": "Course des vers luisants",
+      "time": "La ronde des vers luisants",
       "sessions": 
       [{
         "name": "Course des vers luisants. Inscription à faire en binôme.",
