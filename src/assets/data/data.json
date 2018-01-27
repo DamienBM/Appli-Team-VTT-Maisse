@@ -12,7 +12,12 @@
         "timeStart": "7h30",
         "timeEnd": "13h00",
         "location": "Locale VTT Maisse",
-        "tracks": ["Estérel"],
+        "participants": 
+        [{
+          "nb":"1",
+          "noms":["Test","Test2"]
+        }],
+        "tracks": ["Rando"],
         "id": "1"
       }]
     },
@@ -25,7 +30,12 @@
         "timeStart": "15h",
         "timeEnd": "21h",
         "location": "Vauhallan",
-        "tracks": ["Christophe"],
+        "participants": 
+        [{
+          "nb":"4",
+          "noms":["Test","Test2"]
+        }],
+        "tracks": ["Course"],
         "id": "2"
       }]
     }]

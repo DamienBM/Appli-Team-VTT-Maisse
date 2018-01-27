@@ -18,7 +18,7 @@
       </ion-segment-button>
     </ion-segment>-->
 
-    <ion-title>Courses programmées</ion-title>
+    <ion-title>Sorties programmées</ion-title>
 
     <ion-buttons end>
       <button ion-button icon-only (click)="presentFilter()">
@@ -60,8 +60,10 @@
             {{session.timeEnd}}:
             {{session.location}}
           </p>
+          <ion-badge item-end *ngFor="let ptr of session.participants" [hidden]="ptr.hide">
+            {{ptr.nb}}
+          </ion-badge>
         </button>
-
         <!--<ion-item-options>
           <button ion-button color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === 'all'">
             Favorite
