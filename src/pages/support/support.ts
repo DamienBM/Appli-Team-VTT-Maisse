@@ -21,13 +21,13 @@ export class SupportPage {
 
   }
 
-  ionViewDidEnter() {
+  /*ionViewDidEnter() {
     let toast = this.toastCtrl.create({
-      message: 'This does not actually send a support request.',
+      message: 'Ceci n\'envoie pas vraiment une requete.',
       duration: 3000
     });
     toast.present();
-  }
+  }*/
 
   submit(form: NgForm) {
     this.submitted = true;
@@ -37,7 +37,7 @@ export class SupportPage {
       this.submitted = false;
 
       let toast = this.toastCtrl.create({
-        message: 'Your support request has been sent.',
+        message: 'Votre question a été envoyée.',
         duration: 3000
       });
       toast.present();
@@ -54,11 +54,11 @@ export class SupportPage {
 
     return new Promise((resolve: any, reject: any) => {
       let alert = this.alertCtrl.create({
-        title: 'Leave this page?',
-        message: 'Are you sure you want to leave this page? Your support message will not be submitted.'
+        title: 'Quitter la page?',
+        message: 'Etes-vous sur de vouloi quitter la page ? Votre question ne sera pas envoyée.'
       });
-      alert.addButton({ text: 'Stay', handler: reject });
-      alert.addButton({ text: 'Leave', role: 'cancel', handler: resolve });
+      alert.addButton({ text: 'Rester', handler: reject });
+      alert.addButton({ text: 'Quitter', role: 'Annuler', handler: resolve });
 
       alert.present();
     });

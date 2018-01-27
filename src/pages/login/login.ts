@@ -11,6 +11,8 @@ import { UserOptions } from '../../interfaces/user-options';
 import { TabsPage } from '../tabs-page/tabs-page';
 import { SignupPage } from '../signup/signup';
 
+import { FTP } from '@ionic-native/ftp';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 
 @Component({
   selector: 'page-user',
@@ -22,7 +24,9 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController, 
               public userData: UserData,
-              public InAppBrowser: InAppBrowser
+              public InAppBrowser: InAppBrowser,
+              public FTP: FTP,
+              private localNotifications: LocalNotifications
             ) { }
 
   onLogin(form: NgForm) {
@@ -45,4 +49,15 @@ export class LoginPage {
     this.InAppBrowser.create(url,'_self',options);
 
   }
+
+  /*this.FTP.connect("url","user","mdp"); */
+
+  // pour les notifs
+  /*this.localNotifications.schedule({
+    text: 'Delayed ILocalNotification',
+    at: new Date(new Date().getTime() + 3600),
+    led: 'FF0000',
+    sound: isAndroid ? 'file://sound.mp3': 'file://beep.caf'
+ });*/
+
 }

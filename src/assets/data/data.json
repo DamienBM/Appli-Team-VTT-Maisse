@@ -17,8 +17,7 @@
           "nb":"1",
           "noms":["Test","Test2"]
         }],
-        "tracks": ["Rando"],
-        "id": "1"
+        "tracks": ["Rando"]
       }]
     },
     {
@@ -35,8 +34,7 @@
           "nb":"4",
           "noms":["Test","Test2"]
         }],
-        "tracks": ["Course"],
-        "id": "2"
+        "tracks": ["Course"]
       }]
     }]
   }],

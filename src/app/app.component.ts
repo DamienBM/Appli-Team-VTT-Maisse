@@ -44,11 +44,12 @@ export class ConferenceApp {
     { title: 'Courses', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
     { title: 'Licenciés', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
     { title: 'Local', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 2, icon: 'map' },
-    { title: 'Programmer', name: 'TabsPage', component: TabsPage, tabComponent: ProgramPage, index: 3, icon: 'information-circle' }
+    { title: 'Programmer', name: 'TabsPage', component: TabsPage, tabComponent: ProgramPage, index: 3, icon: 'add-circle' }
   ];
   loggedInPages: PageInterface[] = [
     { title: 'Compte', name: 'AccountPage', component: AccountPage, icon: 'person' },
     { title: 'Déconnexion', name: 'TabsPage', component: TabsPage, icon: 'log-out', logsOut: true }
+
   ];
   loggedOutPages: PageInterface[] = [
     { title: 'Connexion', name: 'LoginPage', component: LoginPage, icon: 'log-in' },
