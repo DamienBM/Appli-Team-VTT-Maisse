@@ -54,7 +54,7 @@
       <ion-item-sliding *ngFor="let session of group.sessions" #slidingItem [attr.track]="session.tracks[0] | lowercase" [hidden]="session.hide">
 
         <button ion-item (click)="goToSessionDetail(session)">
-          <h3>{{group.time}}</h3>
+          <h3>{{group.info}}</h3>
           <p>
             {{session.timeStart}} &mdash;
             {{session.timeEnd}}:
@@ -64,6 +64,7 @@
             {{ptr.nb}}
           </ion-badge>
         </button>
+
         <!--<ion-item-options>
           <button ion-button color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === 'all'">
             Favorite
@@ -74,6 +75,10 @@
         </ion-item-options>-->
 
       </ion-item-sliding>
+
+      <button ion-button block>
+        Je participe
+      </button>
 
     </ion-item-group>
 

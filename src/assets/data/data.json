@@ -5,7 +5,7 @@
     "groups": 
     [{
       "date": "02-07-2017",
-      "time": "21e Rando des nez de boeufs",
+      "info": "21e Rando des nez de boeufs",
       "sessions": 
       [{
         "name": "21e Rando des nez de boeufs à ne pas louper les riders !",
@@ -23,7 +23,7 @@
     },
     {
       "date": "14-11-2017",
-      "time": "La ronde des vers luisants",
+      "info": "La ronde des vers luisants",
       "sessions": 
       [{
         "name": "Course des vers luisants. Inscription à faire en binôme.",
